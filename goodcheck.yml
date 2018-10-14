@@ -1,0 +1,6 @@
+rules:
+  - id: sider.product.signin
+    pattern:
+      literal: login
+      case_sensitive: false
+    message: Please say "sign in" instead of login
