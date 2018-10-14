@@ -1,0 +1,10 @@
+rules:
+  - id: sider.issues.import
+    pattern: _.import!(...)
+    message: |
+      Be careful to call import!
+
+      import! blocks other DB access to the table.
+      This may cause a service outage.
+
+      See #1441, #1447 for the detail.
