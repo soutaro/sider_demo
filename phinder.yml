@@ -1,0 +1,7 @@
+- id: sider.security.token
+  pattern: "(?)->$oauth_token"
+  message: |
+    Use accessor methods instead of reading $oauth_token
+
+    For API requests, use rawOAuthToken().
+    For logging, use filteredOAuthToken().
